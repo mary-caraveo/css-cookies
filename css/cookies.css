@@ -238,3 +238,36 @@ body {
   left: 120px;
   top: 10px;
 }
+
+/* Heart */
+.container-heart {
+  transform: rotate(30deg);
+}
+
+.heart {
+  position: relative;
+  width: 100px;
+  height: 90px;
+  animation: blink 4s linear infinite;
+}
+
+.heart:before,
+.heart:after {
+  position: absolute;
+  content: "";
+  left: 90px;
+  top: -140px;
+  width: 90px;
+  height: 140px;
+  background: #ff0303;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+  box-shadow: 30px 30px inset #ff0303;
+}
+
+.heart:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
