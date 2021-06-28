@@ -1,0 +1,176 @@
+html,
+body {
+  display: grid;
+  place-items: center;
+  background: #f1d4d4;
+  height: 100vh;
+  margin: 0;
+}
+
+.cookies {
+  position: relative;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  background-color: #8b4513;
+  transform: rotate(360deg);
+  animation: move 4s linear infinite;
+  box-shadow: -30px -30px inset #632e08;
+  border: 2px solid #632e08;
+}
+
+/* Eyes */
+.eyes {
+  position: absolute;
+  clip-path: circle(50% at 50% 50%);
+  background: #ffffff;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  animation: close-eyes 8s linear infinite;
+  border: 0.2px solid #632e08;
+}
+
+@keyframes close-eyes {
+  1.6% {
+    transform: scaleY(1);
+  }
+  2.2% {
+    transform: scaleY(0);
+  }
+  2.8% {
+    transform: scaleY(1);
+  }
+}
+
+.eyes-left {
+  left: 50px;
+  top: 130px;
+}
+
+.eyes_medium {
+  position: absolute;
+  border-radius: 50%;
+  background: #000000;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  top: 4px;
+  left: 10px;
+}
+
+.eyes-right {
+  position: absolute;
+  width: 50px;
+  height: 60px;
+  border-right: 15px solid #000000;
+  border-radius: 50%;
+  top: 150px;
+  right: 40px;
+  animation: blink_eyes 4s alternate infinite;
+}
+
+@keyframes blink_eyes {
+  0% {
+    transform: scaleY(1);
+    transform: rotate(270deg);
+  }
+  50% {
+    transform: scaleY(0.9);
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: scaleY(1);
+    transform: rotate(260deg);
+  }
+}
+
+/* iris */
+.iris_top {
+  position: absolute;
+  background: #ffffff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: blink 1s alternate infinite;
+}
+
+.iris-top-left {
+  left: 30px;
+  top: 10px;
+}
+
+@keyframes blink {
+  0% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(0.9);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+/* Cheekbones */
+.cheekbones {
+  background: #e99497;
+  border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 30px;
+}
+
+.cheekbones-left {
+  top: 190px;
+  left: 25px;
+}
+
+.cheekbones-right {
+  top: 190px;
+  right: 20px;
+}
+
+/* Mount */
+.mount {
+  clip-path: circle(50% at 50% 0%);
+  position: absolute;
+  background: black;
+  width: 70px;
+  height: 70px;
+  top: 200px;
+  left: 125px;
+}
+
+/* Tongue */
+.tongue {
+  position: absolute;
+  background: #fc013c;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: blink 1s alternate infinite;
+}
+
+.tongue-left {
+  left: 12px;
+  top: 12px;
+}
+
+.tongue-right {
+  right: 12px;
+  top: 12px;
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(-30px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(-30px);
+  }
+}
