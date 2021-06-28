@@ -174,3 +174,67 @@ body {
     transform: translateY(-30px);
   }
 }
+
+/* chocolate-chips */
+.chocolate-chips {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: #351702;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  border: 5px solid #351702;
+}
+
+.chips-1 {
+  position: absolute;
+  left: 45px;
+  top: 65px;
+}
+
+.chips-2 {
+  position: absolute;
+  left: 130px;
+  top: 90px;
+}
+
+.chips-3 {
+  position: absolute;
+  left: 45px;
+  top: 230px;
+}
+
+.chips-4 {
+  position: absolute;
+  right: 50px;
+  top: 60px;
+}
+
+.chips-5 {
+  position: absolute;
+  right: 150px;
+  top: 260px;
+}
+
+.chips-6 {
+  position: absolute;
+  right: 70px;
+  top: 230px;
+}
+
+.chips-7 {
+  position: absolute;
+  right: 0;
+  top: 120px;
+}
+
+.chips-8 {
+  position: absolute;
+  left: 0;
+  top: 130px;
+}
+
+.chips-9 {
+  position: absolute;
+  left: 120px;
+  top: 10px;
+}
