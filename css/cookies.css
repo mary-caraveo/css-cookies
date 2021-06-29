@@ -1,5 +1,6 @@
 html,
-body {
+body,
+.container {
   display: grid;
   place-items: center;
   background: #f1d4d4;
@@ -231,7 +232,8 @@ body {
 .container-heart-right {
   position: relative;
   transform: rotate(30deg);
-  top: -290px;
+  top: -260px;
+  left: 100px;
 }
 
 .heart-right {
@@ -265,8 +267,8 @@ body {
 .container-heart-left {
   position: relative;
   transform: rotate(30deg);
-  top: -40px;
-  left: 70px;
+  top: 0;
+  left: 180px;
   animation: rote-heart 10s linear infinite;
 }
 
