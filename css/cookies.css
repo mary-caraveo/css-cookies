@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap");
+
 html,
 body {
   display: grid;
@@ -11,6 +13,28 @@ body {
   position: relative;
 }
 
+/* Text */
+.text {
+  position: absolute;
+  font-family: "Henny Penny", cursive;
+  font-size: 22px;
+  color: #794c74;
+  top: 30rem;
+  left: 8rem;
+}
+
+.name {
+  position: absolute;
+  top: -3rem;
+  left: -3rem;
+}
+
+.emojis {
+  position: absolute;
+  width: 130px;
+}
+
+/* Cookies */
 .cookies {
   position: absolute;
   border-radius: 50%;
