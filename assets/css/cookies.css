@@ -45,12 +45,7 @@ html {
 .name {
   position: absolute;
   top: -3rem;
-  left: -2.5rem;
-}
-
-.emojis {
-  position: absolute;
-  width: 130px;
+  left: -3rem;
 }
 
 /* Cookies */
