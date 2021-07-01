@@ -1,11 +1,11 @@
 @media (max-width: 575.98px) {
-  html,
-  body {
-    display: block;
+  html {
+    overflow: scroll;
   }
 
   .container {
-    left: 4rem;
+    top: -15rem;
+    left: -5rem;
   }
 
   .container-heart-right {

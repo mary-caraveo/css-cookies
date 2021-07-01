@@ -1,16 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap");
 
-html,
-body {
+html {
   display: grid;
   place-items: center;
   background: #f1d4d4;
-  height: 100vh;
+  overflow: hidden;
   margin: 0;
+  padding: 0;
+  height: 100vh;
 }
 
 .container {
   position: relative;
+  top: 2rem;
 }
 
 /* Text */
@@ -19,14 +21,31 @@ body {
   font-family: "Henny Penny", cursive;
   font-size: 22px;
   color: #794c74;
-  top: 30rem;
-  left: 8rem;
+  left: -15rem;
+  animation: bounce-in-right 5s ease-in-out;
+}
+
+@keyframes bounce-in-right {
+  0% {
+    opacity: 0;
+    transform: translateX(2000px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(-30px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .name {
   position: absolute;
   top: -3rem;
-  left: -3rem;
+  left: -2.5rem;
 }
 
 .emojis {
@@ -93,7 +112,7 @@ body {
   width: 65px;
   height: 50px;
   border-top: 15px solid #000000;
-  border-bottom: 0 solid #8b4513;
+  border-bottom-width: 0;
   border-radius: 50%;
   -webkit-border-radius: 50%; /* Safari */
   -moz-border-radius: 50%; /* firefox */
