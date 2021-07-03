@@ -352,8 +352,8 @@ html {
 .heart-left:after {
   position: absolute;
   content: "";
-  left: 58px;
-  width: 60px;
+  left: 62px;
+  width: 62px;
   height: 80px;
   background: #ff0357;
   border-radius: 50px 50px 0 0;
@@ -363,7 +363,7 @@ html {
 
 .heart-left:after {
   left: 0;
-  transform: rotate(45deg);
+  transform: rotate(60deg);
   transform-origin: 100% 100%;
 }
 

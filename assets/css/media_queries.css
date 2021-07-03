@@ -4,8 +4,8 @@
   }
 
   .container {
-    top: -20rem;
-    left: -9rem;
+    min-height: 100vh;
+    top: 0;
   }
 
   .container-heart-right {
@@ -31,5 +31,25 @@
   .text {
     top: 55rem;
     left: 16rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  html {
+    overflow-y: scroll;
+  }
+
+  .container {
+    top: 6rem;
+  }
+
+  .text {
+    left: -8rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .text {
+    left: -10rem;
   }
 }
