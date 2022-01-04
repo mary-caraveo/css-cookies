@@ -4,13 +4,13 @@ body {
   display: grid;
   place-items: center;
   background: #f1d4d4;
-  height: 100vh;
   overflow: hidden;
+  height: 100vh;
+  margin: 0;
 }
 
 .container {
-  width: 30vw;
-  height: 20vw;
+  position: relative;
 }
 
 /* Text */
@@ -19,8 +19,8 @@ body {
   font-family: "Henny Penny", cursive;
   font-size: 22px;
   color: #794c74;
-  left: 29.7vw;
-  top: 29.5vw;
+  left: -15.5vw;
+  top: 2.6vw;
   animation: bounce-in-right 5s ease-in-out;
 }
 
@@ -56,8 +56,8 @@ body {
   border-radius: 50%;
   width: 300px;
   height: 300px;
-  top: 23.8vw;
-  left: 42.2vw;
+  top: -4vw;
+  left: -3.8vw;
   background-color: #8b4513;
   transform: rotate(360deg);
   animation: move 4s linear infinite;
@@ -286,14 +286,13 @@ body {
 
 /* Heart right*/
 .container-heart-right {
-  position: relative;
+  position: absolute;
   transform: rotate(30deg);
-  left: 14vw;
-  top: 0.52vw;
+  left: 4.6vw;
+  top: -12.8vw;
 }
 
 .heart-right {
-  position: relative;
   width: 100px;
   height: 90px;
   animation: blink 5s linear infinite;
@@ -320,10 +319,10 @@ body {
 
 /* Heart left*/
 .container-heart-left {
-  position: relative;
+  position: absolute;
   transform: rotate(30deg);
-  top: -3.5vw;
-  left: 19vw;
+  top: -17.5vw;
+  left: 9vw;
   animation: rote-heart 10s linear infinite;
 }
 
@@ -342,7 +341,6 @@ body {
 }
 
 .heart-left {
-  position: relative;
   width: 100px;
   height: 90px;
   animation: blink 5s linear infinite;
@@ -367,18 +365,14 @@ body {
   transform-origin: 100% 100%;
 }
 
-.container_plate {
-  position: relative;
-  top: 12.3vw;
-  left: 7.2vw;
-}
-
 .plate {
-  position: relative;
+  position: absolute;
   background: #91c788;
   border-radius: 50%;
   width: 300px;
   height: 90px;
+  top: 9.6vw;
+  left: -3.8vw;
   box-shadow: 15px 10px 10px rgb(0, 0, 0, 0.2),
     15px 10px 10px rgb(0, 0, 0, 0.2) inset;
   border-bottom: 8px inset #52734d;
