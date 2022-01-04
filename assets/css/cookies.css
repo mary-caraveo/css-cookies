@@ -1,18 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap");
 
-html {
+body {
   display: grid;
   place-items: center;
   background: #f1d4d4;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
   height: 100vh;
+  overflow: hidden;
 }
 
 .container {
-  position: relative;
-  top: 2rem;
+  width: 30vw;
+  height: 20vw;
 }
 
 /* Text */
@@ -21,7 +19,8 @@ html {
   font-family: "Henny Penny", cursive;
   font-size: 22px;
   color: #794c74;
-  left: -15rem;
+  left: 29.7vw;
+  top: 29.5vw;
   animation: bounce-in-right 5s ease-in-out;
 }
 
@@ -57,7 +56,8 @@ html {
   border-radius: 50%;
   width: 300px;
   height: 300px;
-  top: 70px;
+  top: 23.8vw;
+  left: 42.2vw;
   background-color: #8b4513;
   transform: rotate(360deg);
   animation: move 4s linear infinite;
@@ -288,8 +288,8 @@ html {
 .container-heart-right {
   position: relative;
   transform: rotate(30deg);
-  top: -140px;
-  left: 150px;
+  left: 14vw;
+  top: 0.52vw;
 }
 
 .heart-right {
@@ -322,8 +322,8 @@ html {
 .container-heart-left {
   position: relative;
   transform: rotate(30deg);
-  top: -140px;
-  left: 220px;
+  top: -3.5vw;
+  left: 19vw;
   animation: rote-heart 10s linear infinite;
 }
 
@@ -369,7 +369,8 @@ html {
 
 .container_plate {
   position: relative;
-  top: 150px;
+  top: 12.3vw;
+  left: 7.2vw;
 }
 
 .plate {
