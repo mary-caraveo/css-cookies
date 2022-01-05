@@ -1,5 +1,4 @@
 @media (max-width: 575.98px) {
-
   body {
     display: block;
     overflow-y: scroll;
@@ -27,7 +26,7 @@
 
   .text {
     top: 44rem;
-    left: 12rem;
+    left: 11rem;
   }
 }
 
@@ -62,6 +61,10 @@
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
+  .container {
+    left: -3rem;
+  }
+
   .container-heart-left {
     top: -29.5vw;
     left: 17vw;
