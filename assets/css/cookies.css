@@ -1,21 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap");
 
 body {
-  display: grid;
-  place-items: center;
+  margin: 0;
   background: #f1d4d4;
   overflow: hidden;
-  height: 100vh;
-  margin: 0;
 }
 
 .container {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  height: 100vh;
+}
+
+.container-drawing {
+  justify-content: center;
+  align-items: center;
   position: relative;
+  left: -5rem;
 }
 
 /* Text */
 .text {
-  position: absolute;
+  display: flex;
+  position: relative;
   font-family: "Henny Penny", cursive;
   font-size: 22px;
   color: #794c74;
@@ -288,30 +296,29 @@ body {
 .container-heart-right {
   position: absolute;
   transform: rotate(30deg);
-  left: 4.6vw;
+  left: 8.6vw;
   top: -12.8vw;
 }
 
-.heart-right {
-  width: 100px;
-  height: 90px;
+.heart-right,
+.heart-left {
   animation: blink 5s linear infinite;
 }
 
-.heart-right:before,
-.heart-right:after {
+.heart-right::before,
+.heart-right::after {
   position: absolute;
   content: "";
-  left: 90px;
-  width: 90px;
-  height: 140px;
+  left: 73px;
+  width: 74px;
+  height: 126px;
   background: #ff0303;
   border-radius: 50px 50px 0 0;
   transform: rotate(-45deg);
   transform-origin: 0 100%;
 }
 
-.heart-right:after {
+.heart-right::after {
   left: 0;
   transform: rotate(45deg);
   transform-origin: 100% 100%;
@@ -322,7 +329,7 @@ body {
   position: absolute;
   transform: rotate(30deg);
   top: -17.5vw;
-  left: 9vw;
+  left: 12vw;
   animation: rote-heart 10s linear infinite;
 }
 
@@ -340,14 +347,8 @@ body {
   }
 }
 
-.heart-left {
-  width: 100px;
-  height: 90px;
-  animation: blink 5s linear infinite;
-}
-
-.heart-left:before,
-.heart-left:after {
+.heart-left::before,
+.heart-left::after {
   position: absolute;
   content: "";
   left: 62px;
@@ -359,7 +360,7 @@ body {
   transform-origin: 0 100%;
 }
 
-.heart-left:after {
+.heart-left::after {
   left: 0;
   transform: rotate(60deg);
   transform-origin: 100% 100%;
