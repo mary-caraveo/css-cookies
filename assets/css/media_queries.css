@@ -4,45 +4,137 @@
     overflow-y: scroll;
   }
 
+  .container {
+    display: inherit;
+  }
+
+  .container-drawing {
+    display: flex;
+    position: inherit;
+    left: inherit;
+  }
+
   .container-heart-right {
-    top: 7rem;
-    left: 13rem;
+    top: 9rem;
+    left: 61.2vw;
+  }
+
+  .heart-right::before {
+    left: 58px;
+    width: 59px;
+    height: 95px;
+  }
+
+  .heart-right::after {
+    width: 59px;
+    height: 95px;
   }
 
   .container-heart-left {
-    top: 1rem;
-    left: 17rem;
+    top: 3rem;
+    left: 14rem;
+  }
+
+  .heart-left::before {
+    left: 44px;
+    width: 43px;
+    height: 62px;
+  }
+
+  .heart-left::after {
+    width: 42px;
+    height: 62px;
   }
 
   .cookies {
     top: 18rem;
-    left: 3rem;
+    left: inherit;
   }
 
   .plate {
     top: 34.5rem;
-    left: 3rem;
+    left: inherit;
   }
 
   .text {
     top: 44rem;
-    left: 11rem;
+    left: inherit;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .container {
+    padding-top: 50px;
+  }
+
+  .container-drawing {
+    left: inherit;
+  }
+
+  .container-heart-left {
+    top: -35.5vw;
+    left: 23vw;
+  }
+
+  .heart-left::before {
+    left: 33px;
+    width: 32px;
+    height: 49px;
+  }
+
+  .heart-left::after {
+    width: 32px;
+    height: 49px;
+  }
+
+  .container-heart-right {
+    left: 14.6vw;
+    top: -28.8vw;
+  }
+
+  .heart-right::before {
+    left: 53px;
+    width: 53px;
+    height: 81px;
+  }
+  .heart-right::after {
+    width: 53px;
+    height: 81px;
+  }
+
+  .cookies {
+    top: -14vw;
+    left: -15.8vw;
+  }
+
+  .text {
+    left: -33.5vw;
+    top: 2.6vw;
+  }
+
+  .plate {
+    top: 22.6vw;
+    left: -15.8vw;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .container-heart-left {
-    top: -52.5vw;
-    left: 12vw;
+  .container {
+    left: 2rem;
   }
 
-  .container {
-    left: 4rem;
+  .container-drawing {
+    left: inherit;
+  }
+
+  .container-heart-left {
+    top: -45.5vw;
+    left: 20vw;
   }
 
   .container-heart-right {
-    left: 2.6vw;
-    top: -40.8vw;
+    left: 11.6vw;
+    top: -35.8vw;
   }
 
   .plate {
@@ -51,28 +143,52 @@
   }
 
   .cookies {
-    top: -17vw;
+    top: -16.5vw;
     left: -18.8vw;
   }
 
   .text {
-    left: -20rem;
+    left: -14rem;
+    top: -15rem;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  .container {
-    left: -3rem;
+  .container,
+  .container-drawing {
+    left: inherit;
   }
 
   .container-heart-left {
-    top: -29.5vw;
-    left: 17vw;
+    top: -23vw;
+    left: 15vw;
+  }
+
+  .heart-left::before {
+    left: 37px;
+    width: 37px;
+    height: 56px;
+  }
+
+  .heart-left::after {
+    width: 37px;
+    height: 56px;
   }
 
   .container-heart-right {
-    left: 8.6vw;
-    top: -19.8vw;
+    left: 9.6vw;
+    top: -17.7vw;
+  }
+
+  .heart-right::before {
+    left: 58px;
+    width: 60px;
+    height: 97px;
+  }
+
+  .heart-right::after {
+    width: 60px;
+    height: 97px;
   }
 
   .plate {
@@ -90,33 +206,49 @@
   }
 }
 
-@media (min-width: 1200px) and (max-width: 1440px) { 
+@media (min-width: 1200px) and (max-width: 1440px) {
   .container-heart-left {
-    top: -23vw;
-    left: 13vw;
+    top: -17vw;
+    left: 16vw;
   }
 
-  .container {
-    left: -5rem;
+  .heart-left::before {
+    left: 49px;
+    width: 48px;
+    height: 65px;
+  }
+
+  .heart-left::after {
+    width: 48px;
+    height: 65px;
   }
 
   .container-heart-right {
-    left: 7.6vw;
-    top: -16.7vw;
+    left: 12.6vw;
+    top: -12vw;
+  }
+
+  .heart-right::before {
+    left: 64px;
+    width: 66px;
+    height: 108px;
+  }
+
+  .heart-right::after {
+    width: 66px;
+    height: 108px;
   }
 
   .plate {
-    top: 15.4vw;
-    left: -3.8vw;
+    top: 17.3vw;
   }
 
   .cookies {
-    top: -4vw;
-    left: -3.8vw;
+    top: -2vw;
   }
 
   .text {
     left: -19.5vw;
-    top: 2.6vw;
+    top: 5.5vw;
   }
 }
