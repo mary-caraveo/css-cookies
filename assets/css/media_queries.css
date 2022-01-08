@@ -181,7 +181,7 @@
   }
 
   .heart-right::before {
-    left: 58px;
+    left: 59px;
     width: 60px;
     height: 97px;
   }
@@ -208,7 +208,7 @@
 
 @media (min-width: 1200px) and (max-width: 1440px) {
   .container-heart-left {
-    top: -17vw;
+    top: -19vw;
     left: 16vw;
   }
 
@@ -225,7 +225,7 @@
 
   .container-heart-right {
     left: 12.6vw;
-    top: -12vw;
+    top: -14vw;
   }
 
   .heart-right::before {
@@ -244,7 +244,7 @@
   }
 
   .cookies {
-    top: -1vw;
+    top: -1.7vw;
   }
 
   .text {
