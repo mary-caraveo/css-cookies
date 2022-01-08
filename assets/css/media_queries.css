@@ -138,12 +138,12 @@
   }
 
   .plate {
-    top: 17.6vw;
-    left: -17.8vw;
+    top: 19vw;
+    left: -19vw;
   }
 
   .cookies {
-    top: -16.5vw;
+    top: -15.5vw;
     left: -18.8vw;
   }
 
@@ -208,7 +208,7 @@
 
 @media (min-width: 1200px) and (max-width: 1440px) {
   .container-heart-left {
-    top: -19vw;
+    top: -17vw;
     left: 16vw;
   }
 
@@ -225,7 +225,7 @@
 
   .container-heart-right {
     left: 12.6vw;
-    top: -14vw;
+    top: -12vw;
   }
 
   .heart-right::before {
@@ -244,7 +244,7 @@
   }
 
   .cookies {
-    top: -1.7vw;
+    top: -2vw;
   }
 
   .text {
